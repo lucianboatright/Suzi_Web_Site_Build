@@ -6,9 +6,11 @@ const isProduction = process.env.NODE_ENV === "production";
 
 module.exports = {
   mode: isProduction ? "production" : "development",
-  entry: "./src/index.tsx",
+  entry: {
+    main: "./src/index.tsx", // Explicitly naming the entry point
+  },
   output: {
-    filename: isProduction ? "bundle.[contenthash].js" : "bundle.js",
+    filename: isProduction ? "[name].[contenthash].js" : "[name].bundle.js", // Ensure unique names
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "images/[hash][ext][query]",
     publicPath: "/", // Ensures correct asset paths on Netlify
@@ -58,6 +60,14 @@ module.exports = {
   optimization: {
     splitChunks: {
       chunks: "all",
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all",
+        },
+      },
     },
+    runtimeChunk: "single", // Helps manage chunking issues
   },
 };
