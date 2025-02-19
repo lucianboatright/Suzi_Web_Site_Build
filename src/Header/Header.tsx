@@ -2,11 +2,10 @@ import React from 'react';
 import { FilterContainer, HeaderContainer, LinksContainer, LinksContainerBox, StyledButton, StyledHeaderSection, StyledLogoContainer, StyledTitle } from './Header.styles';
 import SuziLogo from '../assets/images/SUZIPROFILE-removebg-preview.png';
 
-
 interface filteredHeaderProps {
   id: number;
   category: string;
-  body: string;
+  body: any;
 }
 
 interface HeaderProps {
@@ -37,17 +36,18 @@ interface HeaderProps {
             </FilterContainer>
             <LinksContainerBox>
               <LinksContainer onClick={() => onPageChange("About")}>ABOUT</LinksContainer>
-              <LinksContainer onClick={() => onPageChange("CV")}>CV</LinksContainer>
+              {/* <LinksContainer onClick={() => onPageChange("CV")}>CV</LinksContainer> */}
               <LinksContainer onClick={() => onPageChange("Contact")}>CONTACT</LinksContainer>
               <LinksContainer activeAbout={!activeAbout} onClick={() => onPageChange(null)}>X</LinksContainer>
             </LinksContainerBox>
 
-            {filteredHeaderSection && ( 
+            {/* {filteredHeaderSection && (  */}
                   <StyledLogoContainer src={SuziLogo} alt="SuziLogo" />
-            )} 
+            {/* )}  */}
             {filteredHeaderSection && ( 
                 <StyledHeaderSection >
-                  <div style={{ marginLeft: 'auto'}}>{filteredHeaderSection.body}</div>
+                  {/* <div style={{ marginLeft: 'auto'}} dangerouslySetInnerHTML={{ __html: filteredHeaderSection.body }}>{filteredHeaderSection.body}</div> */}
+                  <div dangerouslySetInnerHTML={{ __html: filteredHeaderSection.body }} />
                 </StyledHeaderSection>
             )} 
           

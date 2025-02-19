@@ -1,11 +1,9 @@
 
   import styled from "styled-components";
 import MiddleFinger from '../../public/logos/';
-// import middleFinger from '../assets/logos/middleFinger.png'
 
 export const HeaderContainer = styled.header({
   fontFamily: 'Typewriter Condensed',
-  // gridTemplateRows: "auto auto auto", 
   gap: "10px", 
   marginRight: "20px",
   borderBottom: "1px solid #ccc",
@@ -75,17 +73,18 @@ export const StyledHeaderSection = styled.div({
     gridColumn: '3',  
     gridRow: '2',  
     lineHeight: "1.35",
-    fontSize: "1.3rem",
+    fontSize: "1.1rem",
     fontWeight: 400,
     color: "rgba(0, 0, 0, 0.6)",
     fontStyle: "normal",
     letterSpacing: "0em",
-    // width: '60%',
     marginBottom: 'none',
     marginLeft: 'none',
     "@media (min-width: 1000px)": {
-      marginLeft: 'auto',
       marginBottom: '4rem',
+      maxWidth: '23rem',
+      marginLeft: 'auto',
+      minWidth: '21rem',
     },
   });
 
@@ -114,7 +113,7 @@ export const StyledHeaderSection = styled.div({
     fontStyle: "normal",
     fontWeight: 400,
     color: "rgba(0, 0, 0, 0.75)",
-    fontSize: "1.3rem",
+    fontSize: "1.1rem",
     lineHeight: "1.35",
     letterSpacing: "0",
     marginRight: '50px',
@@ -127,7 +126,7 @@ export const StyledHeaderSection = styled.div({
       fontStyle: "normal",
       fontWeight: 400,
       color: "rgba(0, 0, 0, 0.75)",
-      fontSize: "1.3rem",
+      fontSize: "1.1rem",
       lineHeight: "1.3",
       letterSpacing: "0",
       "&:last-child": {
@@ -143,8 +142,9 @@ export const StyledHeaderSection = styled.div({
 
 export const StyledLogoContainer = styled.img({
   height: '10rem',
-    gridColumn: '3',  
+    gridColumn: '2',  
     gridRow: '2',  
+    marginBottom: '1rem',
     "@media (min-width: 1000px)": {
       gridColumn: '2',  
     },

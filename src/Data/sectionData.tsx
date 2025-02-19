@@ -100,6 +100,7 @@ const zarriBeerImagesCarusel2 = [
 import zarriBeerImage1 from '../assets/images/Graphics/SuziGraphics1.png'
 import { SwiperCarousel } from '../Components/ImageCrousel/ImageCarousel';
 import { StyledAnchorTag } from '../Components/AnchorTag/StyledAnchorTag';
+import { StyledTitleLink } from '../Section/Section.styles';
 
 export const sections = [
     {
@@ -111,7 +112,7 @@ export const sections = [
 
       text: `a ‘City plus - the study of boundary conditions involved in the additive aspect of the city space in terms of its redefinition and search for creating custom interactions with defined space structure.’ on the example of via Po in Torino <br /><br /> Observation of reality, an analysis of space, piling up questions of their performance and forming (?) factors - all can be the stimulus for rethinking the formula of space called city.An attempt is made to answer questions - is stating current situation on the foundation of history exclusively correct approach? Should the creation of the space for living in the present times by already inspected methods, while understanding the passage of time and the transience of the act of defining, be considered as suitable for today? Is not the creation to become outdated as soon as it is created? That would be so simply for a reason of passing time and the constant change of needs? Does not a definition - to be current - need to be continuously ready for its redefinition, as does the actualisation happen in a sequence of evolution? Is there a sense of deepening this thought? What actually is the space for current society? What is the use of it? Moreover, what are the opportunities ready to be used?`,
       content:  <>
-      <img src={cityImage} alt="CityImage" />
+      <img style={{height: '70%'}} src={cityImage} alt="CityImage" />
        <SwiperCarousel  images={cityImagesCarusel} width="333.5px" height="472.5px" autoplaySpeed={2000} transitionSpeed={2000}/>
       </>
     },
@@ -121,9 +122,9 @@ export const sections = [
       title: "UNI",
       italicTitle: "underground extension \n of a private detached house",
       lowerTitle: "with C+HO_aR",
-      lowerTitleUrl: <StyledAnchorTag href="http://cplushoar.com/">http://cplushoar.com/</StyledAnchorTag>,
+      lowerTitleUrl: "http://cplushoar.com/",
       text: "Garden by the family home creates a scope for an extension as a hidden den where library and office takes its space. External entrance -arrival whilst sinking in the depths of the green. Promise of a blue observed from inside through skylights.",
-      content:  <SwiperCarousel  images={UniImagesCarusel} width="564.5px" height="212.7px" snapMode={true} autoplaySpeed={1000} transitionSpeed={1} />,
+      content:  <SwiperCarousel  images={UniImagesCarusel} width="564.5px" height="212.7px" snapMode={true} autoplaySpeed={1000} transitionSpeed={0}/>,
     },
     {
       id: 3,
@@ -131,7 +132,7 @@ export const sections = [
       title: "FOLKESTONE",
       italicTitle: "dreams",
       lowerTitle: "with EAST",
-      lowerTitleUrl:<StyledAnchorTag href="https://www.east.uk.com/">https://www.east.uk.com/</StyledAnchorTag>,
+      lowerTitleUrl:"https://www.east.uk.com/",
       text: "Urban scenarios.",
       content: <img src={folkstoneImage} />,
     },
@@ -162,7 +163,7 @@ export const sections = [
       title: "MODELLING for Yanchep",
       italicTitle: "handmade bee and not only",
       lowerTitle: "for Sir Peter Cook at CRAB studio ",
-      lowerTitleUrl: <StyledAnchorTag href="https://crabstudio.com/">https://crabstudio.com/</StyledAnchorTag>,
+      lowerTitleUrl:"https://crabstudio.com/",
       text: "Something from nothing - idea into scaleable reality.<br /><br /> Use of with multiple media:<br /> + paper<br /> + wood<br /> + metal<br /> + plastic.",
       content: <>
       <img src={yanchepImage1} alt="CityImage" style={{ width: '109.5px', height: '139.5px', marginRight: '6rem'}}/>
@@ -175,7 +176,7 @@ export const sections = [
       title: "SMALL SPORTS HALL",
       italicTitle: "built",
       lowerTitle: "with C+HO_aR",
-      lowerTitleUrl: <StyledAnchorTag href="http://cplushoar.com/">http://cplushoar.com/</StyledAnchorTag>,
+      lowerTitleUrl:"http://cplushoar.com/",
       text: "Architectural and structural design.",
       content: <SwiperCarousel images={sportsHallImagesCarusel} width="328.55px" height="174px" autoplaySpeed={2000} snapMode={true} transitionSpeed={0}/>      ,
     },
@@ -185,7 +186,7 @@ export const sections = [
       title: "PUBLIC REALM",
       italicTitle: "in High Barnet",
       lowerTitle: "with EAST",
-      lowerTitleUrl: <StyledAnchorTag href="https://www.east.uk.com/">https://www.east.uk.com/</StyledAnchorTag>,
+      lowerTitleUrl: "https://www.east.uk.com/",
       text: "Extensive public realm scheme with housing on the rather uneven grounds by one of the main London’s underground end station.",
       content: <>
        <SwiperCarousel  images={publicRelmImagesCarusel} width="217px" height="390px" autoplaySpeed={2000} snapMode={true} transitionSpeed={0}/>
@@ -197,9 +198,6 @@ export const sections = [
       category: "URBAN",
       title: "STUDIES",
       italicTitle: "multischeme",
-      // lowerTitle: "for Sir Peter Cook at CRAB studio ",
-      // lowerTitleUrl: "https://crabstudio.com/",
-      // link: "https://example.com",
       text: "Riverbank of a Polish city offers a shallow but long plot bounded by housing and industrial qualities with a busy tram course along the border. Project arises by dissecting the current situation simultaneously looking for possibilities within the array of a mixed use scheme.<br /><br /> Detached form the public rush, all apartments are situated by the shore with the view and the promenade. 3 office blocks act as a part of the sound buffer with additional vertical planes and shallow fountains where the social opportunities boost. Student apartments are in the transition zone - all connected via generous corridors and active ground floor carried by underground garage.",
       content: <>
        <SwiperCarousel  images={StudiesImagesCarusel} width="217px" height="129px" autoplaySpeed={2000} snapMode={true} transitionSpeed={0}/>
@@ -216,8 +214,7 @@ export const sections = [
       title: "RENDERING",
       italicTitle: "extension of existing school complex",
       lowerTitle: "with C+HO_aR",
-      lowerTitleUrl: <StyledAnchorTag href="http://cplushoar.com/">http://cplushoar.com/</StyledAnchorTag>,
-      // link: "https://example.com",
+      lowerTitleUrl: "http://cplushoar.com/",
       text: "Going up...",
       content: <>
                 <SwiperCarousel  images={RenderingImagesCarusel} width="217px" height="125px" autoplaySpeed={2000} snapMode={true} transitionSpeed={0}/>
@@ -230,13 +227,15 @@ export const sections = [
       title: "3D MODELLING",
       italicTitle: "ocean house - WEST 507",
       lowerTitle: "for Mei architects and planners",
-      lowerTitleUrl: <StyledAnchorTag href="https://mei-arch.eu/">https://mei-arch.eu/</StyledAnchorTag>,
+      lowerTitleUrl: "https://mei-arch.eu/",
       text: "Detailed 3D modelling of architectural volumes completed in narrow time windows.",
       link: "https://mei-arch.eu/projecten/lofts-in-west507/",
       content: <>
- <StyledAnchorTag href="https://mei-arch.eu/projecten/lofts-in-west507/">https://mei-arch.eu/projecten/lofts-in-west507/</StyledAnchorTag> 
- <SwiperCarousel  images={modelingImagesCarusel} width="449.5px" height="112.5px" autoplaySpeed={2000} snapMode={true} transitionSpeed={0}/>
- </>,
+          <StyledTitleLink>
+            <a target="_blank" rel="noopener noreferrer" href={"https://mei-arch.eu/projecten/lofts-in-west507/"}>https://mei-arch.eu/projecten/lofts-in-west507/</a>
+          </StyledTitleLink>
+          <SwiperCarousel  images={modelingImagesCarusel} width="449.5px" height="112.5px" autoplaySpeed={2000} snapMode={true} transitionSpeed={0}/>
+        </>,
     },
     {
       id: 12,
@@ -244,12 +243,10 @@ export const sections = [
       title: "GRAPHICS",
       italicTitle: "work in progress",
       lowerTitle: "with EAST ",
-      // lowerTitleUrl: "https://crabstudio.com/",
-      // link: "https://example.com",
       text: "Work & Play.",
       content: <>
-      <SwiperCarousel  images={graphicsImagesCarusel} width="103px" height="97px" autoplaySpeed={1000}/>
-      <img src={graphicsImage1} alt="CityImage" style={{width: '103px', height: '103px', marginRight: '2rem',}} />
+      <SwiperCarousel  images={graphicsImagesCarusel} width="143px" autoplaySpeed={1000}/>
+      <img src={graphicsImage1} alt="CityImage" style={{width: '143px', marginRight: '2rem',}} />
   </>,
     },
     {
@@ -258,12 +255,13 @@ export const sections = [
       title: "ZARRI BEER LAB",
       italicTitle: "Villa Zarri",
       lowerTitle: "with MONOLAB",
-      lowerTitleUrl: <StyledAnchorTag href="https://www.monolab.nl/">https://www.monolab.nl/</StyledAnchorTag> 
-,
+      lowerTitleUrl:"https://www.monolab.nl/",
       text: "One of the leading Italian breweries investing to create a quality space for craft brewery to give the visitors a comprehensive experience, not only will it be possible to taste the products, but to learn how the products are made, thus enjoying a cultural and entertaining experience.<br /><br /> Programmatic requirements: multi-purpose space, shop, laboratory, tasting hall, restaurant, beer accommodation.<br /><br /> The Park: current sets of trees already create a number of ‘green rooms’. Together with the proposed smaller follies, it makes a domain full of discoveries. Children have their own dedicated place to build up structures of wood. Villa and Lab both have new extended terraces that lead to a pavilion in the center. The Park façade of The Lab is set back to create a terrace between interior and exterior. Openable glazed facade turns Lab and Park into one.",
       link: "https://www.monolab.nl/projects/zarri-beer-lab/",
       content: <>
-       <StyledAnchorTag href="https://www.monolab.nl/projects/zarri-beer-lab/">https://www.monolab.nl/projects/zarri-beer-lab/</StyledAnchorTag> 
+                <StyledTitleLink>
+            <a target="_blank" rel="noopener noreferrer" href={"https://www.monolab.nl/projects/zarri-beer-lab/"}>https://www.monolab.nl/projects/zarri-beer-lab/</a>
+          </StyledTitleLink>
 <div style={{marginTop: '15rem'}}>
       <SwiperCarousel  images={zarriBeerImagesCarusel2} width="102px" height="276.3px" autoplaySpeed={2000} snapMode={true} transitionSpeed={0}/>
 </div>

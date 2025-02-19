@@ -39,7 +39,7 @@ export const Title = styled.div({
 export const Text = styled.div({
     fontFamily: '"Typewriter", sans-serif',
   lineHeight: "1.35",
-  fontSize: "1.3rem",
+  fontSize: "1.1rem",
   fontWeight: 400,
   color: "rgba(0, 0, 0, 0.6)",
   fontStyle: "normal",
@@ -49,10 +49,7 @@ export const Text = styled.div({
 
 export const Content = styled.div({
     fontFamily: '"Typewriter", sans-serif',
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-
+    display: "flex",
 });
 
 export const StyledTitle = styled.div({
@@ -60,7 +57,7 @@ export const StyledTitle = styled.div({
     fontWeight: 400,
     margin: "0",
     color: "rgba(0, 0, 0, 0.75)",
-    fontSize: "1.3rem",
+    fontSize: "1.1rem",
     lineHeight: "1.3",
     letterSpacing: "0",
 });
@@ -72,7 +69,7 @@ export const StyledItalicTitle = styled.div({
   fontWeight: 400,
   margin: "0",
   color: "rgba(0, 0, 0, 0.75)",
-  fontSize: "1.3rem",
+  fontSize: "1.1rem",
   lineHeight: "1.3",
   letterSpacing: "0",
 });
@@ -83,19 +80,22 @@ export const StyledLowerTitle = styled.div({
   fontWeight: 400,
   margin: "0",
   color: "rgba(0, 0, 0, 0.75)",
-  fontSize: "1.3rem",
+  fontSize: "1.1rem",
   lineHeight: "1.3",
   letterSpacing: "0",
-  marginTop: '2rem'
+  marginTop: '2rem',
+  marginBottom: '1rem',
 });
 
 export const StyledTitleLink = styled.div({
     fontFamily: '"Typewriter", sans-serif',
   display: "flex",
   fontWeight: 400,
-  margin: "0",
-  color: "rgba(0, 0, 0, 0.75)",
-  fontSize: "1.3rem",
-  lineHeight: "1.3",
-  letterSpacing: "0",
+  "& a": {
+    color: "rgba(0, 0, 0, 0.75)",
+    lineHeight: "1.1rem",
+    letterSpacing: "0",
+    textDecoration: 'none',
+    fontSize: "1.1rem",
+  }
 });

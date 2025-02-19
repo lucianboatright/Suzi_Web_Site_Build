@@ -1,6 +1,5 @@
 import React from "react";
 import { SectionContainer, Section, Column, Content, Title, Text, StyledItalicTitle, StyledLowerTitle, StyledTitle, StyledTitleLink } from './Section.styles';
-import { Trans } from 'react-i18next';
 
 interface Section {
   id?: number;
@@ -18,6 +17,8 @@ interface SectionListProps {
 }
 
 const SectionList: React.FC<SectionListProps> = ({ sections }) => {
+  {console.log(sections
+  )}
   return (
     <SectionContainer>
       {sections.map((section) => (
@@ -26,7 +27,7 @@ const SectionList: React.FC<SectionListProps> = ({ sections }) => {
             <Title>
               {/* <a href={section.link} target="_blank" rel="noopener noreferrer">
                 {section.title}
-              </a> */}
+                </a> */}
               <StyledTitle>
                 {section.title}
               </StyledTitle>
@@ -36,16 +37,16 @@ const SectionList: React.FC<SectionListProps> = ({ sections }) => {
               <StyledLowerTitle>
                 {section.lowerTitle}
               </StyledLowerTitle>
-              {section.lowerTitleUrl && 
+              {/* {section.lowerTitleUrl &&  */}
                 <StyledTitleLink>
-                  {section.lowerTitleUrl}
+                  {/* {section.lowerTitleUrl} */}
+              <a target="_blank" rel="noopener noreferrer" href={section.lowerTitleUrl}>{section.lowerTitleUrl}</a>
                 </StyledTitleLink>
-              }
+              {/* } */}
             </Title>
           </Column>
           <Column>
             <Text >
-            {/* <Trans i18nKey={section.text} /> */}
             <div dangerouslySetInnerHTML={{ __html: section.text || 'string'}}/>
             </Text>
           </Column>
