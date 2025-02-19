@@ -18,28 +18,3 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 `;
-
-
-
-
-
-
-
-// const GlobalStyles = createGlobalStyle`
-//   @font-face {
-//     font-family: 'Typewriter';
-//     src: local('Typewriter'), url('fonts/typewriter-condensed/typewcond_regular.woff2') format('woff2'),
-//          url('fonts/typewriter-condensed/typewcond_regular.woff') format('woff'),
-//          url('fonts/typewriter-condensed/typewcond_regular.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-//   }
-
-//   body {
-//     font-family: 'Typewriter', sans-serif;
-//     margin: 0;
-//     padding: 0;
-//   }
-// `;
-
-// export default GlobalStyles;
