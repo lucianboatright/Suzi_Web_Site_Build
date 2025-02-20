@@ -25,9 +25,6 @@ const SectionList: React.FC<SectionListProps> = ({ sections }) => {
         <Section key={section.id}>
           <Column>
             <Title>
-              {/* <a href={section.link} target="_blank" rel="noopener noreferrer">
-                {section.title}
-                </a> */}
               <StyledTitle>
                 {section.title}
               </StyledTitle>

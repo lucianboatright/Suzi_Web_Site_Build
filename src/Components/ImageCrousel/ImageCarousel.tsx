@@ -28,7 +28,7 @@ export const SwiperCarousel: React.FC<CarouselProps> = ({
   fadeMode = false, // Default: false
 }) => {
   return (
-    <div style={{ maxWidth: width, margin: "auto" }}>
+    <div style={{ maxWidth: width }}>
       <Swiper
         modules={[Autoplay, Navigation, Pagination, EffectFade]}
         loop={true} 

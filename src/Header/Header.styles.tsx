@@ -37,8 +37,8 @@ export const StyledButton = styled.div({
   fontStyle: "normal",
   fontWeight: 400,
   color: "rgba(0, 0, 0, 0.75)",
-  fontSize: "1.35rem",
-  lineHeight: "1.3",
+  fontSize: "1.1rem",
+  lineHeight: "1.1",
   letterSpacing: "0",
   marginRight: '10px',
   "@media (min-width: 1000px)": {
@@ -46,7 +46,7 @@ export const StyledButton = styled.div({
       fontStyle: "normal",
       fontWeight: 400,
       color: "rgba(0, 0, 0, 0.75)",
-      fontSize: "1.35rem",
+      fontSize: "1.1rem",
       lineHeight: "1.3",
       letterSpacing: "0",
     },
@@ -55,9 +55,9 @@ export const StyledButton = styled.div({
 export const StyledTitle = styled.h1({
     display: "flex",
       fontFamily: '"Typewriter", sans-serif',
-      fontWeight: 700,
+      fontWeight: '500',
       margin: "0",
-      fontSize: "2.2rem",
+      fontSize: "1.8rem",
       lineHeight: "0.9",
       color: "rgba(0, 0, 0, 0.85)",
       letterSpacing: "-0.069em",
@@ -98,7 +98,6 @@ export const StyledHeaderSection = styled.div({
       display: 'grid',
       gridTemplateColumns: "5fr 1fr 1fr 1fr", 
       marginLeft: 'auto',
-      marginBottom: '20px',
     },
   }));
 
@@ -141,7 +140,7 @@ export const StyledHeaderSection = styled.div({
   }));
 
 export const StyledLogoContainer = styled.img({
-  height: '10rem',
+  height: '8rem',
     gridColumn: '2',  
     gridRow: '2',  
     marginBottom: '1rem',
