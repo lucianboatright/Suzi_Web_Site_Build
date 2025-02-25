@@ -12,13 +12,6 @@ export const AboutSections = [
     {
       id: 3,
       category: "Contact",
-      body: " <div style='margin-right: 5rem'> <div style='text-align:end;'>SUZY GASZCZAK</div><div style='text-align:end;'>EMAIL: SUZY@GASZCZAK.COM</div><div style='text-align:end;'>PHONE: 07405973645</div> </div>",
-    //   <>
-    //   <div>
-    //   <p>SUZY GASZCZAK</p>
-    //   <p>EMAIL: SUZY@GASZCZAK.com</p>
-    //   <p>PHONE: 07405973645</p>
-    // </div>,
-    //   </>
+      body: " <div> <div style='text-align:end;'>SUZY GASZCZAK</div><div style='text-align:end;'>EMAIL: SUZY@GASZCZAK.COM</div><div style='text-align:end;'>PHONE: 07405973645</div> </div>",
     },
   ];

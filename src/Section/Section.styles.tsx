@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import customeCourser from '../assets/smallMiddleFinger.png'
+
 export const SectionContainer = styled.div({
     fontFamily: '"Typewriter", sans-serif',
   display: "flex",
@@ -81,6 +83,7 @@ export const StyledLowerTitle = styled.div({
   letterSpacing: "0",
   marginTop: '2rem',
   marginBottom: '1rem',
+
 });
 
 export const StyledTitleLink = styled.div({
@@ -93,20 +96,28 @@ export const StyledTitleLink = styled.div({
     letterSpacing: "0",
     textDecoration: 'none',
     fontSize: "1.1rem",
+    '&:hover': {
+      fontWeight: 700,
+      cursor: `${customeCourser}`,
+    },
   }
 });
 
 export const StyledSectionLink = styled.div({
   fontFamily: '"Typewriter", sans-serif',
 display: "flex",
-fontWeight: 400,
 "& a": {
+  fontWeight: 100,
   width: '5rem',
   color: "rgba(0, 0, 0, 0.75)",
   lineHeight: "1.1rem",
   letterSpacing: "0",
   textDecoration: 'none',
   fontSize: "1.1rem",
+  '&:hover': {
+    fontWeight: 700,
+    cursor: `${customeCourser}`,
+  },
 }
 });
 
@@ -132,9 +143,17 @@ export const StyledRubySection = styled.div({
   },
 });
 
-export const ZarriBeerLabs = styled.div({
+export const ZarriBeerLabsFirst = styled.div({
 marginTop: '0rem',
+float: 'left',
 "@media (min-width: 1000px)": {
-    marginTop: '16rem',
+    marginTop: '8rem',
+  },
+});
+export const ZarriBeerLabsSecond = styled.div({
+marginTop: '0rem',
+float: 'right',
+"@media (min-width: 1000px)": {
+    // marginTop: '16rem',
   },
 });

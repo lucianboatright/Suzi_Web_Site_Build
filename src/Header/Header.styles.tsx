@@ -17,7 +17,7 @@ export const HeaderContainer = styled.header({
     marginLeft: "20px",
     padding: "0px",
     gridTemplateRows: "none",
-    gridTemplateColumns: "1fr 2fr 3fr", 
+    gridTemplateColumns: "16% 30% 52%", 
   },
 });
 
@@ -96,7 +96,7 @@ export const StyledHeaderSection = styled.div({
     "@media (min-width: 1000px)": {
       marginTop: '0rem',
       display: 'grid',
-      gridTemplateColumns: "5fr 1fr 1fr 1fr", 
+      gridTemplateColumns: "5fr 1fr 1fr auto", 
       marginLeft: 'auto',
     },
   }));
@@ -115,9 +115,9 @@ export const StyledHeaderSection = styled.div({
     fontSize: "1.1rem",
     lineHeight: "1.35",
     letterSpacing: "0",
-    marginRight: '50px',
+    marginRight: '5.5rem',
     marginBottom: '0.25rem',
-    visibility: props.activeAbout ? "hidden" : "visible", 
+    // visibility: props.activeAbout ? "hidden" : "visible", 
     "@media (min-width: 1000px)": {
       textAlign: 'end',
       marginBottom: '0rem',
@@ -134,7 +134,14 @@ export const StyledHeaderSection = styled.div({
       
     },
     "&:last-child": {
-     marginRight: "3rem",
+      lineHeight: "1.1rem",
+      fontSize: "2.3rem",
+    //  marginRight: "3rem",
+     transform: props.activeAbout ? "rotate(0deg)" : "rotate(45deg)" ,
+     WebkitTransition: "-webkit-transform 1s ease-in",
+     cursor: props.activeAbout ? "none": "pointer"
+    //  -webkit-transition: -webkit-transform 1s ease-in;
+
    },
    
   }));

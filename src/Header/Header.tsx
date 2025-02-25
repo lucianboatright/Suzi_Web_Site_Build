@@ -16,7 +16,7 @@ interface HeaderProps {
     activeAbout: string;
 }
   
-  const Header: React.FC<HeaderProps> = ({ onFilterChange, onPageChange, filteredHeaderSection, activeFilter, activeAbout }) => {
+  const Header: React.FC<HeaderProps> = ({ onFilterChange, onPageChange, filteredHeaderSection, activeAbout }) => {
 
     return (
       <>
@@ -36,9 +36,9 @@ interface HeaderProps {
             </FilterContainer>
             <LinksContainerBox>
               <LinksContainer onClick={() => onPageChange("About")}>ABOUT</LinksContainer>
-              {/* <LinksContainer onClick={() => onPageChange("CV")}>CV</LinksContainer> */}
+              <LinksContainer onClick={() => onPageChange("CV")}>CV</LinksContainer>
               <LinksContainer onClick={() => onPageChange("Contact")}>CONTACT</LinksContainer>
-              <LinksContainer activeAbout={!activeAbout} onClick={() => onPageChange(null)}>X</LinksContainer>
+              <LinksContainer activeAbout={!activeAbout} onClick={() => onPageChange(null)}>+</LinksContainer>
             </LinksContainerBox>
 
             {/* {filteredHeaderSection && (  */}

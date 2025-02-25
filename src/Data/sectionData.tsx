@@ -1,6 +1,5 @@
 import React from 'react';
 
-import image1 from '../../public/images/City/SuziCityCarosel1.png'
 
 
 const cityImagesCarusel = [
@@ -102,7 +101,7 @@ const zarriBeerImagesCarusel2 = [
 import zarriBeerImage1 from '../assets/images/Graphics/SuziGraphics1.png'
 import { SwiperCarousel } from '../Components/ImageCrousel/ImageCarousel';
 import { StyledAnchorTag } from '../Components/AnchorTag/StyledAnchorTag';
-import { StyledFlexSection, StyledFlexSpacedSection, StyledRubySection, StyledSectionLink, StyledTitleLink, ZarriBeerLabs, ZarriBeerLabsSection } from '../Section/Section.styles';
+import { StyledFlexSection, StyledFlexSpacedSection, StyledRubySection, StyledSectionLink, StyledTitleLink, ZarriBeerLabs, ZarriBeerLabsFirst, ZarriBeerLabsSecond, ZarriBeerLabsSection } from '../Section/Section.styles';
 
 export const sections = [
     {
@@ -256,9 +255,7 @@ export const sections = [
         <StyledSectionLink>
           <a target="_blank" rel="noopener noreferrer" href={"https://mei-arch.eu/projecten/lofts-in-west507/"}>https://mei-arch.eu/projecten/lofts-in-west507/</a>
         </StyledSectionLink>
-        {/* <div style={{ float: 'right'}}> */}
         <SwiperCarousel  images={modelingImagesCarusel} width="449.5px" height="112.5px" autoplaySpeed={2000} snapMode={false} transitionSpeed={1}/>
-        {/* </div> */}
       </StyledFlexSpacedSection>
         ,
     },
@@ -286,17 +283,19 @@ export const sections = [
       lowerTitleUrl:"https://www.monolab.nl/",
       text: "One of the leading Italian breweries investing to create a quality space for craft brewery to give the visitors a comprehensive experience, not only will it be possible to taste the products, but to learn how the products are made, thus enjoying a cultural and entertaining experience.<br /><br /> Programmatic requirements: multi-purpose space, shop, laboratory, tasting hall, restaurant, beer accommodation.<br /><br /> The Park: current sets of trees already create a number of ‘green rooms’. Together with the proposed smaller follies, it makes a domain full of discoveries. Children have their own dedicated place to build up structures of wood. Villa and Lab both have new extended terraces that lead to a pavilion in the center. The Park façade of The Lab is set back to create a terrace between interior and exterior. Openable glazed facade turns Lab and Park into one.",
       link: "https://www.monolab.nl/projects/zarri-beer-lab/",
-      content: <StyledFlexSection>
+      content: <div style={{ display: 'inline'}}>
         <StyledSectionLink>
           <a target="_blank" rel="noopener noreferrer" href={"https://www.monolab.nl/projects/zarri-beer-lab/"}>https://www.monolab.nl/projects/zarri-beer-lab/</a>
         </StyledSectionLink>
-        <StyledFlexSection>
-          <ZarriBeerLabs >
+        {/* <StyledFlexSection> */}
+          <ZarriBeerLabsFirst >
           <SwiperCarousel  images={zarriBeerImagesCarusel2} width="102px" height="276.3px" autoplaySpeed={2000} snapMode={false} transitionSpeed={1}/>
-          </ZarriBeerLabs>
+          </ZarriBeerLabsFirst>
+          <ZarriBeerLabsSecond>
             <SwiperCarousel images={zarriBeerImagesCarusel1} width="449.5px" height="303px" autoplaySpeed={4000} fadeMode={true} transitionSpeed={4000}/>
-        </StyledFlexSection>
-      </StyledFlexSection>
+          </ZarriBeerLabsSecond>
+        {/* </StyledFlexSection> */}
+    </div>
   ,
     },
   ];
