@@ -17,7 +17,7 @@ export const HeaderContainer = styled.header({
     marginLeft: "20px",
     padding: "0px",
     gridTemplateRows: "none",
-    gridTemplateColumns: "16% 30% 52%", 
+    gridTemplateColumns: "16% auto 27rem", 
   },
 });
 
@@ -26,7 +26,6 @@ export const FilterContainer = styled.div({
   marginBottom: '1rem',
   "@media (min-width: 1000px)": {
     marginBottom: '0rem',
-    display: "flex", 
     },
 });
 
@@ -82,7 +81,7 @@ export const StyledHeaderSection = styled.div({
     marginLeft: 'none',
     "@media (min-width: 1000px)": {
       marginBottom: '4rem',
-      maxWidth: '23rem',
+      maxWidth: '24.5rem',
       marginLeft: 'auto',
       minWidth: '21rem',
     },

@@ -100,8 +100,7 @@ const zarriBeerImagesCarusel2 = [
 
 import zarriBeerImage1 from '../assets/images/Graphics/SuziGraphics1.png'
 import { SwiperCarousel } from '../Components/ImageCrousel/ImageCarousel';
-import { StyledAnchorTag } from '../Components/AnchorTag/StyledAnchorTag';
-import { StyledFlexSection, StyledFlexSpacedSection, StyledRubySection, StyledSectionLink, StyledTitleLink, ZarriBeerLabs, ZarriBeerLabsFirst, ZarriBeerLabsSecond, ZarriBeerLabsSection } from '../Section/Section.styles';
+import { StyledFlexSection, StyledFlexSpacedSection, StyledRubySection, StyledSectionLink, StyledTitleLink, ZarriBeerLabsFirst, ZarriBeerLabsSecond, } from '../Section/Section.styles';
 
 export const sections = [
     {
@@ -205,10 +204,16 @@ export const sections = [
       lowerTitle: "with EAST",
       lowerTitleUrl: "https://www.east.uk.com/",
       text: "Extensive public realm scheme with housing on the rather uneven grounds by one of the main London’s underground end station.",
-      content: <StyledFlexSection>
+      content: <div>
+        <div style={{float: 'left'}}>
+
         <SwiperCarousel  images={publicRelmImagesCarusel} width="210px" autoplaySpeed={2000} snapMode={false} transitionSpeed={1}/>
+        </div>
+        <div style={{float: 'right'}}>
+
        <img src={publicRelmImage} alt="CityImage" style={{width: '478px', marginLeft: '1rem', float: 'right'}}/>
-      </StyledFlexSection>
+        </div>
+      </div>
       ,
     },
     {
@@ -268,7 +273,7 @@ export const sections = [
       text: "Work & Play.",
       content: <div style={{ display: 'flex'}}>
         <div style={{ marginLeft: '0px', marginRight: 'auto'}} >
-        <SwiperCarousel  images={graphicsImagesCarusel} width="143px" autoplaySpeed={1000} snapMode={true} transitionSpeed={1000}/>
+        <SwiperCarousel  images={graphicsImagesCarusel} width="143px" autoplaySpeed={1000} snapMode={false} transitionSpeed={1000}/>
         </div>
         <img src={graphicsImage1} alt="CityImage" style={{width: '143px'}} />
       </div>
